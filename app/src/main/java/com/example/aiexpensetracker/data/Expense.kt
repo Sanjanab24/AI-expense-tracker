@@ -10,5 +10,7 @@ data class Expense(
     val amount: Double,
     val description: String,
     val category: String,
-    val date: Long // Store date as a timestamp
+    val date: Long, // Store date as a timestamp
+    val isRecurring: Boolean = false,
+    val recurringExpenseId: Long? = null
 )
